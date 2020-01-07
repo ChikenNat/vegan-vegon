@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+header{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: animate 20s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        background-image: url('veganbg.jpg');
+    }
+    25%{
+        background-image: url('veganbg2.jpg');
+    }
+    50%{
+        background-image: url('veganbg3.jpg');
+    }
+    75%{
+        background-image: url('veganbg4.jpg');
+    }
+}
+ul{
+    float: right; 
+    list-style-type: none;
+    margin-top: 30px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 22px; /*Ini batas antara tulisan di dalam dengan box, dan jarak antara box */
+    border: 1px solid transparent; /* Making box dissapear but still there (if u know what i mean)*/
+    transition: 0.5s ease; /*efek transisi pada button, setelah kursor diarahkan */
+}
+ul li a:hover{ /* Ini seetelah kusor di tempeklan ke menu, jadi berubah warna */
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.logo img{
+    float: left;
+    width: 170px;
+    height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+
+.box{
+    width: 90%;
+    height: 500px;
+    background: blue;
+    margin: 100px auto;
+}
+
+footer{
+    background: #fff;
+    color: #555555;
+    padding: 10px; /* jarak antara colom dan tulisan */
+    text-align: center;
+    font-size: 12;
+}
+
+
+/* Nav bar yang diatas menu */
+.navbar
+{
+    width: 100%;
+    position: fixed;
+    transition: .5s;
+}
+
+section .sec1
+{
+    width: 100%;
+    height: 100vh;
+    background: url();
+}
